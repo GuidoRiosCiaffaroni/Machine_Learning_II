@@ -287,3 +287,37 @@ Para la evolución del proyecto **PlantVille**, se proponen las siguientes líne
 4.  **Optimización para Hardware Específico:** Investigar el uso de aceleradores como *Coral Edge TPU* para llevar la inferencia a microcontroladores de consumo ultrabajo, permitiendo un monitoreo autónomo mediante drones o estaciones fijas.
 
 
+# 7. REFERENCIAS BIBLIOGRÁFICAS
+
+* **Chollet, F.** (2021). *Deep Learning with Python* (2nd ed.). Manning Publications. (Referencia para el uso de Keras y TensorFlow en los notebooks A3 y A4).
+* **Guo, Y., Liu, Y., Oerlemans, A., Lao, S., Wu, S., & Lew, M. S.** (2016). Deep learning for visual understanding: A review. *Neurocomputing*, 187, 27-48.
+* **Hughes, D. P., & Salathé, M.** (2015). An open access repository of images on plant health to enable the development of mobile disease diagnostics. *arXiv preprint arXiv:1511.08060*. (Referencia técnica del dataset PlantVillage utilizado en PlantVille_05).
+* **Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... & Duchesnay, E.** (2011). Scikit-learn: Machine learning in Python. *Journal of Machine Learning Research*, 12, 2825-2830. (Referencia para las implementaciones de KNN, Random Forest y Elastic Net).
+* **Tan, M., & Le, Q. V.** (2019). EfficientNet: Rethinking model scaling for convolutional neural networks. *International Conference on Machine Learning (ICML)*. (Fundamento de la arquitectura utilizada en el proyecto final).
+* **Universidad de las Américas.** (2025). *Hacia una Agricultura de Precisión en Chiloé: Sistema Basado en Deep Learning e IoT*. Núcleo de Investigación en Data Science (NIDS).
+
+---
+
+# 8. ANEXOS
+
+## Anexo A: Repositorios de Código y Notebooks
+El desarrollo técnico de este proyecto se encuentra documentado en los siguientes archivos de Jupyter Notebook, los cuales contienen el código fuente, las celdas de entrenamiento y las visualizaciones de métricas:
+
+1.  **Fundamentos de Redes Neuronales:**
+    * `A1_006_.ipynb`: Implementación del Perceptrón simple y carga de datos.
+    * `A2_008.ipynb`: Análisis de métricas de negocio (Recall vs. Precision).
+    * `A3_003.ipynb`: Redes Neuronales Artificiales y validación cruzada.
+    * `A4_14_D.ipynb`: Comparativa entre MLP y modelos clásicos.
+
+2.  **Proyecto Final PlantVille:**
+    * `PlantVille_05.ipynb`: Pipeline de descarga (Sparse Checkout) y preprocesamiento de imágenes.
+    * `KNN_002.ipynb` / `RF_003.ipynb` / `EN_010.ipynb`: Entrenamiento de modelos basados en embeddings.
+    * `Comparacion_04.ipynb`: Evaluación final y contraste de métricas entre EfficientNet, KNN y Random Forest.
+
+## Anexo B: Glosario de Términos Técnicos
+* **Backpropagation:** Algoritmo fundamental para el entrenamiento de redes neuronales que calcula el gradiente de la función de pérdida respecto a los pesos.
+* **Data Augmentation:** Técnica de creación de nuevos datos sintéticos a partir de los existentes (rotaciones, espejados) para mejorar la generalización.
+* **Edge Computing:** Procesamiento de datos que ocurre cerca de la fuente (el dispositivo IoT), reduciendo la necesidad de enviar datos a la nube.
+* **Embedding:** Representación vectorial de baja dimensionalidad que captura las características semánticas de un dato de entrada (como una imagen).
+* **F1-Score:** Métrica que combina Precision y Recall; es especialmente útil cuando las clases de enfermedades están desbalanceadas.
+* **Transfer Learning:** Técnica que consiste en tomar un modelo pre-entrenado en un dataset masivo (ImageNet) y adaptarlo a una tarea específica (detección de enfermedades de plantas).
